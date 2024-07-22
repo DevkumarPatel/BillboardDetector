@@ -2,3 +2,4 @@
 datasets/
 datasets/*
 datasets/**/*
+__pycache__

@@ -9,6 +9,7 @@ load_dotenv()
 
 def get_roboflow_dataset(
     model_format: Literal["yolov5", "yolov7", "yolov8", "yolov8-obb" , "yolov9"] = "yolov5",
+    location = "datasets/ooh-detection",
     overwrite: bool = False
 ) -> Dataset:
     """Gets the roboflow dataset.
@@ -35,7 +36,7 @@ def get_roboflow_dataset(
     # Download or get the data from a saved spot.
     dataset = version.download(
         model_format=model_format,
-        location="datasets/ooh-detection",
+        location=location,
         overwrite=overwrite
     )
 
