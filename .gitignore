@@ -3,3 +3,5 @@ datasets/
 datasets/*
 datasets/**/*
 __pycache__
+.cache
+yolo*.pt
